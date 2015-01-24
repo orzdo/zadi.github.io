@@ -1,4 +1,0 @@
-Orzdo
-===============
-
-Personal Web Page
