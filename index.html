@@ -2,67 +2,37 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>ORZDO</title>
+<title>gotoing, waiting</title>
 <link rel="shortcut icon" href="img/favicon.ico" />
 <style type="text/css">
-body {
-	background-repeat: repeat;
-	background-image: url(img/geometry2.png);
-}
-#tumblr {
-	position: absolute;
-	top: 40%;
-	bottom: auto;
-	left: -45%;
-	right: 0px;
-	height: 150px;
-	width: 150px;
-	margin: auto;
-}
-#gplus {
-	position: absolute;
-	top: 40%;
-	bottom: auto;
-	left: -15%;
-	right: 0px;
-	height: 150px;
-	width: 150px;
-	margin: auto;
-}
-#twitter {
-	position: absolute;
-	top: 40%;
-	bottom: auto;
-	left: 15%;
-	right: 0;
-	height: 150px;
-	width: 150px;
-	margin: auto;
-}
-#about {
-	position: absolute;
-	top: 40%;
-	bottom: auto;
-	left: 45%;
-	right: 0px;
-	height: 150px;
-	width: 150px;
-	margin: auto;
-}
-</style>
 </head>
-
+	
 <body>
-<div id="tumblr">
-<a href="http://blog.beta.cool" target="_blank"><img src="img/Tumblr.png" width="150" height="149"></a></div>
-<div id="gplus">
-<a href="https://www.google.com/+CaiHua" target="_blank"><img src="img/Google+.png" name="gplus" width="150" height="149"></a></div>
-<div id="twitter">
-<a href="https://twitter.com/Orzdo" target="_blank"><img src="img/Twitter.png" name="twitter" width="150" height="149"></a></div>
-<div id="about">
-<a href="https://about.me/orzdo" target="_blank"><img src="img/About.png" name="About" width="150" height="149"></a></div>
-</div>
+<form name=loading> 
+　<p align=center> <font color="#0066ff" size="2">gotoing, waiting</font><font color="#0066ff" size="2" face="Arial">...</font>
+　　<input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:0px; border-style:none;"> 
+　　
+　　<input type=text name=percent size=47 style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
+　　<script>　 
+var bar=0　 
+var line="||"　 
+var amount="||"　 
+count()　 
+function count(){　 
+bar=bar+2　 
+amount =amount + line　 
+document.loading.chart.value=amount　 
+document.loading.percent.value=bar+"%"　 
+if (bar<99)　 
+{setTimeout("count()",100);}　 
+else　 
+{window.location = "https://about.me/orzdo";}　 
+}</script> 
+　</p> 
+</form> 
+<p align="center"> not support goto,<a style="text-decoration: none" href="https://about.me/orzdo"><font color="#FF0000">click here</font></a>.</p>
 </body>
+	
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
